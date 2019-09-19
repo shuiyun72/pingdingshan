@@ -65,7 +65,7 @@ export default {
     isShowGeo(){
       console.log(this.detailData)
       let detailGx = _.filter(this.detailData,res=>{
-        return res.propertyName == "材质";
+        return res.propertyName == "编号";
       })
       return detailGx.length > 0 ? true : false
     },
