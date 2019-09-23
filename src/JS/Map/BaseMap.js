@@ -1386,8 +1386,15 @@ BaseMap.prototype.intersectsCoordinate = function(feture,coordinate,callback){
 
 }
 
-BaseMap.prototype.ProjectionProjTo = function(coordinate){
+//地方投影转标准经纬度
+BaseMap.prototype.Eg4547ToEg4326 = function(coordinate){
   let destinationCoordinate = ol.proj.transform(coordinate,'EPSG:4547','EPSG:4326');
+  return destinationCoordinate
+}
+
+//地方投影转标准经纬度
+BaseMap.prototype.Eg4326ToEg4547 = function(coordinate){
+  let destinationCoordinate = ol.proj.transform(coordinate,'EPSG:4326','EPSG:4547');
   return destinationCoordinate
 }
 

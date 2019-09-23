@@ -368,17 +368,19 @@ export default {
       } else if (this.currentPickMode === "pick-coordinate") {
         console.log("coord", event.coordinate);
         this.mapController.addQueryObjectFeature(event.coordinate);
+        let coordinate4547 = this.mapController.Eg4326ToEg4547([event.coordinate[0],event.coordinate[1]]);
         this.currentPickedPointDetailData = [
-          { propertyName: "经度", propertyValue: event.coordinate[0] },
-          { propertyName: "纬度", propertyValue: event.coordinate[1] }
+          { propertyName: "经度", propertyValue: coordinate4547[0] },
+          { propertyName: "纬度", propertyValue: coordinate4547[1] }
         ];
         this.pointDetailTableVisible = true;
       } else if (this.currentPickMode === "device_point") {
         console.log("coord", event.coordinate);
         this.mapController.addQueryObjectFeature(event.coordinate);
+        let coordinate4547 = this.mapController.Eg4326ToEg4547([event.coordinate[0],event.coordinate[1]]);
         this.currentPickedPointDetailData = [
-          { propertyName: "经度", propertyValue: event.coordinate[0] },
-          { propertyName: "纬度", propertyValue: event.coordinate[1] }
+          { propertyName: "经度", propertyValue: coordinate4547[0] },
+          { propertyName: "纬度", propertyValue: coordinate4547[1] }
         ];
         this.pointDetailTableVisible = true;
       }
@@ -819,17 +821,13 @@ export default {
         typeof this.searchLongitude === "number" &&
         typeof this.searchLatitude === "number"
       ) {
-         let newSearchPosition =  this.mapController.ProjectionProjTo([this.searchLongitude,this.searchLatitude]);
-         console.log(newSearchPosition)
+         let newSearchPosition =  this.mapController.Eg4547ToEg4326([this.searchLongitude,this.searchLatitude]);
         if (
           newSearchPosition[0] <= extent.longitude[1] &&
           newSearchPosition[0] >= extent.longitude[0] &&
           newSearchPosition[1] <= extent.latitude[1] &&
           newSearchPosition[1] >= extent.latitude[0]
         ) {
-          console.log(111);
-         
-        
           let coordsFor84 = CoordsHelper.wgs84togcj02(
               newSearchPosition[0],
               newSearchPosition[1]

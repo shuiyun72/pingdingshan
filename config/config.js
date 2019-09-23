@@ -5,7 +5,6 @@ export default {
     user: 'http://117.158.118.133:5284/asmx/admin.asmx',
     // 巡检养护
     inspection: 'http://117.158.118.133:5284/asmx/Inspection.asmx',
-    //inspection: 'http://localhost:1840/asmx/Inspection.asmx',
     maintain: 'http://117.158.118.133:5284/asmx/Mantain.asmx',
     gis: 'http://117.158.118.133:5284/asmx/GIS.asmx',
     monitor: 'http://117.158.118.133:5200/MonitorAPI/api'
@@ -19,7 +18,6 @@ export default {
   mapKey: 'bGQKLAdpcE2yP6uALGnMDcOFfnvvs5hV',
   // 超图iServer地址
   superMapIServer: {
-    //url: 'http://47.104.3.68:8090/iserver/services/map-PingDingShanGongShuiGuanWang/rest/maps/平顶山供水管网',
     url: 'http://117.158.118.133:8090/iserver/services/map-PingDingShanGuanWangShuJu/rest/maps/平顶山供水管网_全',
     tablesName: {
       '普通给水管线': '普通给水管线@供水设施',
