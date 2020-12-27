@@ -1,0 +1,86 @@
+{
+	"pages": [ {
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "元氏卡家登录"
+		}
+	}    ,{
+            "path" : "pages/login/loginAdd",
+            "style" : {
+				"navigationBarTitleText": "元氏卡家注册"
+			}
+        }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {
+				"navigationBarTitleText": "首页"
+			}
+        }
+       
+        ,{
+            "path" : "pages/msg/msg",
+            "style" : {
+				"navigationBarTitleText": "我的消息"
+			}
+        },
+		{
+		    "path" : "pages/mine/mine",
+		    "style" : {
+				"navigationBarTitleText": "我的"
+			}
+		}
+        ,{
+            "path" : "pages/car/car",
+            "style" : {
+				"navigationBarTitleText": "车辆发布"
+			}
+        }
+        ,{
+            "path" : "pages/home/charge",
+            "style" : {
+				"navigationBarTitleText": "购买会员"
+			}
+        }
+        ,{
+            "path" : "pages/login/loginFind",
+            "style" : {
+				"navigationBarTitleText": "重置密码"
+			}
+        }
+        ,{
+            "path" : "pages/car/carList",
+            "style" : {
+				"navigationBarTitleText": "车辆列表"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "元氏卡家",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#31C5AF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/img/bar/syh.png",
+			"selectedIconPath": "static/img/bar/syl.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/msg/msg",
+			"iconPath": "static/img/bar/ywzxh.png",
+			"selectedIconPath": "static/img/bar/ywzxl.png",
+			"text": "消息"
+		},{
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/img/bar/wdh.png",
+			"selectedIconPath": "static/img/bar/wdl.png",
+			"text": "我的"
+		}]
+	}
+}

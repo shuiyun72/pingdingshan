@@ -1,0 +1,65 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/home/home",
+		    "style" : {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商家端"
+			}
+		},
+		{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "优乐汇登录"
+			}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {
+				"navigationBarTitleText": "店铺评价"
+			}
+        }
+        ,{
+            "path" : "pages/mine/reply",
+            "style" : {
+				"navigationBarTitleText": "回复"
+			}
+        },
+		{
+		    "path" : "pages/mine/money",
+		    "style" : {
+				"navigationBarTitleText": "钱包明细"
+			}
+		}
+        ,{
+            "path" : "pages/mine/withdrawMoney",
+            "style" : {
+				"navigationBarTitleText": "提现"
+			}
+        }
+        ,{
+            "path" : "pages/mine/msg",
+            "style" : {
+				"navigationBarTitleText": "提现完成"
+			}
+        }
+        ,{
+            "path" : "pages/orders/orders",
+            "style" : {
+				"navigationBarTitleText": "我的产品"
+			}
+        }
+        ,{
+            "path" : "pages/orders/allOrder",
+            "style" : {
+				"navigationBarTitleText": "订单"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
